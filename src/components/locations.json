@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Bello Club - Haifa",
+    "type": "Club",
+    "latitude": 32.7940463,
+    "longitude": 34.98957100000007
+  },
+  {
+    "name": "The Museum of Islamic Art - Jerusalem",
+    "type": "Museum",
+    "latitude": 31.768319,
+    "longitude": 35.21370999999999
+  },
+  {
+    "name": "Astoria Galilee Hotel - Tiberias",
+    "type": "Hotel",
+    "latitude": 32.795859,
+    "longitude": 35.53097300000002
+  },
+  {
+    "name": "Pizza Lek - Eilat",
+    "type": "Pizza",
+    "latitude": 29.557669,
+    "longitude": 34.951925000000074
+  },
+  {
+    "name": "Landver Caffe - Afula",
+    "type": "Caffe",
+    "latitude": 32.6205153,
+    "longitude": 35.31316449999997
+  },
+  {
+    "name": "Tzipori National Park",
+    "type": "Park",
+    "latitude": 32.7508232,
+    "longitude": 35.28452919999995
+  }
+]
