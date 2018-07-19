@@ -21,9 +21,7 @@ This is the Udacity Neighborhood Map Project. Its the final challenge in the FEN
   
 ### Try the production app
 
-To try the production version of the app, use the following url: 
-
-https://mcrivar.github.io/neighborhood_map_app/
+To try the production version of the app run NPM RUN BUILD and than NPM RUN DEPLOY
 
 ### Structure
 
