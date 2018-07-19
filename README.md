@@ -18,7 +18,12 @@ This is the Udacity Neighborhood Map Project. Its the final challenge in the FEN
 * start the development server with npm start
 * <b> After everything is installed, you MUST define the API keys in order for the project to work.
   To do so, go to Keys.js and define the required keys for the project. <u>(Google and foursquare Api Keys)</u></b>
- 
+  
+### Try the production app
+
+To try the production version of the app, use the following url: 
+
+https://mcrivar.github.io/neighborhood_map_app/
 
 ### Structure
 

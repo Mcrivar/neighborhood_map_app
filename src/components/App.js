@@ -1,6 +1,6 @@
 import React from "react";
 import LocationList from "./LocationList";
-import ApiKeys from './Keys'
+import {FSQUARE_CLIENT_ID, FSQUARE_CLIENT_SECRET, GOOGLE_MAPS_KEY} from './Keys'
 
 class App extends React.Component {
     constructor(props) {
@@ -16,7 +16,7 @@ class App extends React.Component {
     componentDidMount() {
         window.initMap = this.initMap;
         loadMapJS(
-            "https://maps.googleapis.com/maps/api/js?key=AIzaSyACbjbDtFHboToWICX5E4bAbdInVNk5D1Y&callback=initMap"
+            "https://maps.googleapis.com/maps/api/js?key="+GOOGLE_MAPS_KEY+"&callback=initMap"
         );
     }
 
@@ -88,11 +88,12 @@ class App extends React.Component {
         this.state.map.panBy(0, -200);
         this.getMarkerInfo(marker);
     }
-    getMarkerInfo(marker) {
+
+    getMarkerInfo = (marker) => {
         const self = this;
         let url =
-            "https://api.foursquare.com/v2/venues/search?client_id=Q5MK2XFDK3FVTDQLOQKSFTKS1CI1XEWZSO2TIPP5DU2PWICK&client_secret=" +
-            "MQ3CZLR5KY1F04FUAX5YWXOLYRRJSYFWCHZANZZ23M4WI05L" +
+            "https://api.foursquare.com/v2/venues/search?client_id="+FSQUARE_CLIENT_ID+"&client_secret=" +
+            FSQUARE_CLIENT_SECRET +
             "&v=20130815&ll=" +
             marker.getPosition().lat() +
             "," +
@@ -150,10 +151,11 @@ class App extends React.Component {
                     openInfoWindow={this.openInfoWindow}
                     closeInfoWindow={this.closeInfoWindow}
                 />
-                <div id="map" />
+                <div id="map"/>
             </div>
         );
     }
+
 }
 
 export default App;
@@ -161,13 +163,16 @@ export default App;
 /**
  * google maps loader
  */
+
+
 function loadMapJS(src) {
     var ref = window.document.getElementsByTagName("script")[0];
     var script = window.document.createElement("script");
     script.src = src;
     script.async = true;
-    script.onError = function() {
-        document.write("Google Maps can't be loaded");
-    };
+    script.onerror = function () {
+        alert("Google Maps can't be loaded, please verify your key");
+    }
     ref.parentNode.insertBefore(script, ref);
 }
+

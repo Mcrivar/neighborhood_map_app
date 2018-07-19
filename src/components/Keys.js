@@ -1,9 +1,3 @@
-
-const ApiKeys = () => {
-    return {
-        google_api: "api_key",
-        foursquare_client: "client_id",
-        foursquare_api: "api_key"
-    };
-}
-export default ApiKeys;
+export const FSQUARE_CLIENT_ID = "Q5MK2XFDK3FVTDQLOQKSFTKS1CI1XEWZSO2TIPP5DU2PWICK";
+export const FSQUARE_CLIENT_SECRET = "MQ3CZLR5KY1F04FUAX5YWXOLYRRJSYFWCHZANZZ23M4WI05L";
+export const GOOGLE_MAPS_KEY = "AIzaSyACbjbDtFHboToWICX5E4bAbdInVNk5D1Y";
