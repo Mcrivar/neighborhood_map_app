@@ -23,6 +23,8 @@ This is the Udacity Neighborhood Map Project. Its the final challenge in the FEN
 
 To try the production version of the app run NPM RUN BUILD and than NPM RUN DEPLOY
 
+you can also visit for live app: https://mcrivar.github.io/neighborhood_map_app/ 
+
 ### Structure
 
 ```
