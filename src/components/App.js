@@ -16,7 +16,7 @@ class App extends React.Component {
     componentDidMount() {
         window.initMap = this.initMap;
         loadMapJS(
-            "https://maps.googleapis.com/maps/api/js?key="+ApiKeys.google_api+"&callback=initMap"
+            "https://maps.googleapis.com/maps/api/js?key=AIzaSyACbjbDtFHboToWICX5E4bAbdInVNk5D1Y&callback=initMap"
         );
     }
 
@@ -91,10 +91,8 @@ class App extends React.Component {
     getMarkerInfo(marker) {
         const self = this;
         let url =
-            "https://api.foursquare.com/v2/venues/search?client_id=" +
-            ApiKeys.foursquare_client +
-            "&client_secret=" +
-            ApiKeys.foursquare_api +
+            "https://api.foursquare.com/v2/venues/search?client_id=Q5MK2XFDK3FVTDQLOQKSFTKS1CI1XEWZSO2TIPP5DU2PWICK&client_secret=" +
+            "MQ3CZLR5KY1F04FUAX5YWXOLYRRJSYFWCHZANZZ23M4WI05L" +
             "&v=20130815&ll=" +
             marker.getPosition().lat() +
             "," +
